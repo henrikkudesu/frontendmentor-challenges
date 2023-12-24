@@ -32,8 +32,8 @@ Users should be able to:
 <p align="center" style="height: 600px; height: 390px"><img src="./screenshots/mobile-ver.png"></p>
 
 ### Links
-- Solution URL: [Code on Github](https://github.com/henrikkudesu/profile-card-component)
-- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/profile-card-component/)
+- Solution URL: [Code on Github](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/profile-card-component)
+- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/profile-card-component/)
 
 ## My process
 I structured the html in a semantic way, then finished styling the elements.

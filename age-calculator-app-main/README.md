@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/henrikkudesu/age-calculator-app-main)
-- [Live Site](https://henrikkudesu.github.io/age-calculator-app-main)
+- [Solution URL](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/advice-generator-app)
+- [Live Site](https://henrikkudesu.github.io/frontendmentor-challenges/age-calculator-app-main)
 
 ### Built with
 

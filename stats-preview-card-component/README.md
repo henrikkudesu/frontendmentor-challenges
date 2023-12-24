@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/henrikkudesu/stats-preview-card-component)
-- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/stats-preview-card-component/)
+- Solution URL: [Code on Github](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/stats-preview-card-component)
+- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/stats-preview-card-component/)
 
 ## My process
 First, I structured the HTML, which I believe is correct and semantic. Then, I went to CSS and first made the desktop version. After adjusting the measurement values, I made the media queries to make it responsive. The CSS code is a complete mess and I still need to add an overlay color over the image, which I haven't been able to do so far. 🤷‍♂️

@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/henrikkudesu/advice-generator-app)
-- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/advice-generator-app/)
+- Solution URL: [Code on Github](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/advice-generator-app)
+- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/advice-generator-app/)
 
 ## My process
 As it's a small project, I didn't find it a problem to start with the desktop version. I styled everything as the challenge asks and then the easy part was making the API. There's not much to say about the process.

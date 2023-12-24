@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/henrikkudesu/single-price-grid-component/)
-- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/single-price-grid-component/)
+- Solution URL: [Code on Github](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/single-price-grid-component)
+- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/single-price-grid-component/)
 
 ## My process
 

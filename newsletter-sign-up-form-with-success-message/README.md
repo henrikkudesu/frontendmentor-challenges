@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/henrikkudesu/newsletter-sign-up-form-with-success-message)
-- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/newsletter-sign-up-form-with-success-message/)
+- Solution URL: [Code on Github](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/newsletter-sign-up-form-with-success-message)
+- Live Site URL: [Github Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/newsletter-sign-up-form-with-success-message/)
 
 ## My process
 Since I haven't coding in html and css for a long time, consider that the code is messed up, maybe some classes out of order in the css and a very poor structure. The project was just for training and remembering concepts. 🤷‍♂️
