@@ -27,14 +27,14 @@ Users should be able to:
 ## Desktop version
 
 <p align="center">
-  <img src="/screenshots/desktop-ver.png" />
+  <img src="./screenshots/desktop-ver.png" />
 </p>
 
 
 ## Mobile version
 
 <p align="center" style="height: auto;">
-  <img src="/screenshots/mobile-ver.png" />
+  <img src="./screenshots/mobile-ver.png" />
 </p>
 
 ### Links
