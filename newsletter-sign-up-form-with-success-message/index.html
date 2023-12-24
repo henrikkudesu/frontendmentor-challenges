@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <div class="main-content">
+    <form class="form" action="#" method="POST">
+      <div class="form__image">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration">
+        </picture>
+      </div>
+      <div class="col">
+        <div class="form__text container">
+          <h1 class="form__text--title">Stay updated!</h1>
+          <p class="form__text--paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="form__text--list">
+            <li class="form__list-item"><img src="./assets/images/icon-list.svg" alt="Ícone"> Product discovery and
+              building what matters</li>
+            <li class="form__list-item"><img src="./assets/images/icon-list.svg" alt="Ícone"> Measuring to ensure
+              updates are a success</li>
+            <li class="form__list-item"><img src="./assets/images/icon-list.svg" alt="Ícone"> And much more!</li>
+          </ul>
+        </div>
+        <div class="form-container container">
+          <label for="email" id="emailInput" class="form__label">Email address<span class="error-text"></span></label>
+          <input type="text" class="form__input" placeholder="email@company.com">
+          <button type="submit" class="form__button">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/henrikkudesu" target="_blank">Leonardo Nascimento</a>.
+  </div>
+  <script>
+    const form = document.querySelector('.form');
+    const successMessage = document.querySelector('.form__success-message');
+    const emailInput = document.querySelector('.form__input');
+    const errorText = document.querySelector('.error-text');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (validateEmail(emailInput.value)) {
+        // Armazenar o e-mail na Web Storage
+        localStorage.setItem('userEmail', emailInput.value);
+
+        window.location.href = 'form__success.html';
+      } else {
+        emailInput.classList.add('invalid');
+        errorText.textContent = 'Valid e-mail required';
+        errorText.classList.add('show');
+      }
+    });
+
+    function validateEmail(email) {
+      // Expressão regular para validação de e-mail
+      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      return emailRegex.test(email);
+    }
+  </script>
+</body>
+
+</html>

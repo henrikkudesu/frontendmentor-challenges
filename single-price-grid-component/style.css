@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+:root {
+  /* colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* centering things */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  min-height: 100vh;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+/* container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+/* price grid component */
+.price-grid {
+  margin: 0 2em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+  font-size: 1rem;
+  max-height: 80vh;
+  width: 86%;
+  margin: auto;
+}
+
+.price-grid__title {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.price-grid__subtitle {
+  color: var(--light-gray);
+  font-size: 1.225rem;
+  font-weight: 700;
+}
+
+.price-grid__text {
+  line-height: 1.6em;
+  color: var(--grayish-blue);
+}
+
+.price-grid-3__text {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+.price-grid__subtitle--highlight {
+  color: var(--bright-yellow);
+}
+
+/* price-grid-1 */
+.price-grid-1 {
+  background-color: #fff;
+}
+
+/* price-grid-2 */
+.price-grid-2 {
+  background-color: #2bb3b1;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.price-grid-2__value {
+  color: var(--light-gray);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-grid-2__text {
+  color: var(--light-gray);
+}
+
+.price-grid-2__text--light {
+  color: var(--light-gray);
+  opacity: 0.6;
+}
+
+.price-grid__button {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--bright-yellow);
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+  margin-top: 1em;
+  padding: 1em;
+  font-weight: 700;
+  width: 100%;
+  text-shadow: 1px 1px 1px var(--grayish-blue);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.price-grid__button:hover {
+  background-color: hsl(71, 73%, 46%);
+}
+
+/* price-grid-3 */
+.price-grid-3 {
+  background-color: #4abebd;
+  border-radius: 0 0 6px 6px;
+}
+
+.price-grid-3__text {
+  opacity: 0.8;
+  width: 76%;
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 1em 2em;
+  }
+
+  .price-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9em;
+    width: 40%;
+  }
+
+  .price-grid-1 {
+    border-radius: 6px 6px 0 0;
+    width: 100;
+  }
+
+  .price-grid-2 {
+    border-radius: 0 0 0 6px;
+    width: 50%;
+  }
+
+  .price-grid-3 {
+    border-radius: 0 0 6px 0;
+    width: 50%;
+  }
+
+  .price-grid-3__text {
+    width: 80%;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Thanks for subscribing!</title>
+</head>
+
+<body>
+  <div class="form__success-message">
+    <img src="./assets/images/icon-success.svg" alt="Ícone">
+    <h1 class="form__text--title">Thanks for subscribing!</h1>
+    <p class="form__success-message--paragraph">
+      A confirmation email has been sent to <span class="form__email-address"></span>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button type="button" id="dismissButton" class="form__button form__dismiss-button">Dismiss message</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Recuperar o e-mail da Web Storage
+      const userEmail = localStorage.getItem('userEmail');
+
+      // Atualizar o conteúdo da tag span com o e-mail recuperado
+      const emailSpan = document.querySelector('.form__email-address');
+      if (userEmail) {
+        emailSpan.textContent = userEmail;
+      }
+
+      // Adicionar o evento de clique ao botão "Dismiss message"
+      document.getElementById('dismissButton').addEventListener('click', function () {
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
+</body>
+
+</html>
