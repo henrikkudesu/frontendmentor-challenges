@@ -24,18 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-## Desktop version
+#### Desktop Version
+<p align="center"><img src="./screenshots/desktop-ver.png"></p>
 
-<p align="center">
-  <img src="./screenshots/desktop-ver.png" />
-</p>
-
-
-## Mobile version
-
-<p align="center" style="height: auto;">
-  <img src="./screenshots/mobile-ver.png" />
-</p>
+#### Mobile Version
+<p align="center" style="height: 600px; height: 390px"><img src="./screenshots/mobile-ver.png"></p>
 
 ### Links
 
