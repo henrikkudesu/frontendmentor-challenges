@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:  [Code on GitHub](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/blog-preview-component)
-- Live Site URL: [GitHub Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/blog-preview-component/)
+- Solution URL:  [Code on GitHub](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/blog-preview-card-main)
+- Live Site URL: [GitHub Pages Live URL](https://henrikkudesu.github.io/frontendmentor-challenges/blog-preview-card-main/)
 
 ## My process
 
