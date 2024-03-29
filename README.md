@@ -12,3 +12,5 @@ Repositório contendo desafios do site FrontEnd Mentor.
 * [profile-card-component](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/profile-card-component)
 * [single-price-grid-component](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/single-price-grid-component)
 * [stats-preview-card-component](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/stats-preview-card-component)
+* [blog-preview-card-main](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/blog-preview-card-main)
+* [social-links-profile-main](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/social-links-profile-main)
