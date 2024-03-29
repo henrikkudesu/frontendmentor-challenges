@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --body-font-size: 14px;
+
+    /* Font */
+    --font-default: 'Inter', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: var(--font-default);
+    font-size: var(--body-font-size);
+    background-color: var(--neutral-off-black);
+    color: var(--neutral-white);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    background-color: var(--neutral-dark-grey);
+    border-radius: 12px;
+    padding: 1.625rem;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-card {
+        min-width: 16%;
+        margin: 0 auto;
+    }
+}
+
+.profile-card__about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    gap: 1rem;
+}
+
+.profile-card__about-pic {
+    width: 34%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.profile-card__about-name {
+    color: var(--neutral-white);
+    font-size: 22px;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.profile-card__about-city {
+    color: var(--primary-green);
+    font-size: 14px;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.profile-card__about-phrase {
+    margin-top: 0.571rem;
+    font-weight: var(--font-weight-normal);
+}
+
+.profile-card__social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.profile-card__social-link {
+    background-color: var(--neutral-grey);
+    border-radius: 8px;
+    padding: .865rem;
+    font-weight: var(--font-weight-semi-bold);
+    transition: background-color 0.8s ease;
+}
+
+.profile-card__social-link:hover {
+    background-color: var(--primary-green);
+    color: var(--neutral-off-black);
+
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 12px;
+    color: var(--neutral-white);
+}
+
+.attribution__link {
+    color: var(--primary-green);
+    font-weight: var(--font-weight-semi-bold);
+}
