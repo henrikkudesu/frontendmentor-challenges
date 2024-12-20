@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Root Variables */
+:root {
+    /* Colors */
+    --green-lighter: hsl(148, 38%, 91%);
+    --green-medium: hsl(169, 82%, 27%);
+    --green-hover: hsl(169, 82%, 37%);
+    /* New hover color */
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey-medium: hsl(186, 15%, 59%);
+    --grey-darker: hsl(187, 24%, 22%);
+
+    /* Typography */
+    --font-family: 'Karla', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-size-labels: 16px;
+    --font-size-small: 14px;
+    /* Small font size for mobile */
+
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    --spacing: 1rem;
+    /* Spacing variable for consistent margins */
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-labels);
+    color: var(--grey-darker);
+    background-color: var(--green-lighter);
+    margin: auto;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--spacing);
+}
+
+/* Buttons */
+button {
+    font-family: var(--font-family);
+    font-size: var(--font-size-labels);
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+    background-color: var(--green-medium);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--green-hover);
+    /* Improved hover color */
+}
+
+/* Links */
+a {
+    color: var(--green-medium);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Helpers */
+.container {
+    border-radius: 12px;
+    padding: var(--spacing);
+    /* Improved padding for containers */
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    padding: 2.285rem;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow */
+}
+
+form h1 {
+    font-size: 1.825rem;
+    text-align: left;
+}
+
+form label {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey-darker);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--grey-medium);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-labels);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--green-medium);
+    /* Highlight input on focus */
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-top: 0.8rem;
+    margin-left: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin: 0 0.8rem 2.2rem 0;
+}
+
+form button {
+    width: 103%;
+    padding: 0.75rem;
+    font-weight: var(--font-weight-regular);
+}
+
+form .name-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
+
+form .error {
+    display: none;
+    color: var(--red);
+    font-size: 0.875rem;
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+}
+
+form .success {
+    display: none;
+    text-align: center;
+    color: var(--green-medium);
+    font-weight: var(--font-weight-regular);
+    margin-top: 1rem;
+}
+
+.query-type {
+    width: 103%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.checkbox-container {
+    width: 100%;
+    border: 1px solid var(--grey-medium);
+    border-radius: 8px;
+    margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-container:focus-within,
+.checkbox-container:hover {
+    background-color: var(--green-hover)
+}
+
+.checkbox-container label {
+    padding: 0.5rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.attribution {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        margin: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    form {
+        max-height: 90%;
+
+    }
+
+    form .name-label {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .query-type {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .consent {
+        margin-bottom: 1.6rem;
+    }
+
+    .consent input {
+        margin: 0 !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    body {
+        font-size: var(--font-size-small);
+    }
+
+    form {
+        padding: 1.5rem;
+        /* Adjust padding for small devices */
+        flex-wrap: wrap;
+    }
+}
