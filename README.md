@@ -15,3 +15,4 @@ Repositório contendo desafios do site FrontEnd Mentor.
 - [blog-preview-card-main](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/blog-preview-card-main)
 - [social-links-profile-main](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/social-links-profile-main)
 - [sunnyside-agency-landing-page](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/sunnyside-agency-landing-page-main)
+- [recipe-page-main](https://github.com/henrikkudesu/frontendmentor-challenges/tree/main/recipe-page-main)
